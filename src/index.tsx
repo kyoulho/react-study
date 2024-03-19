@@ -2,14 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Page from "./components/ContextSample";
+import Counter from "./components/Counter";
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
 root.render(
     <React.StrictMode>
-        <Page/>
+        <Counter initialValue={0}/>
     </React.StrictMode>
 );
 
