@@ -1,7 +1,12 @@
 // Container는 빨간색 배경의 박스 안에 제목과 자식 요소를 표시한다.
 import React from "react";
 
-const Container = (props: { title: string; children: React.ReactElement }) => {
+type ContainerProps = {
+    title: string
+    children: React.ReactNode
+}
+
+const Container = (props: ContainerProps): React.JSX.Element => {
     const {title, children} = props;
 
     return (
