@@ -1,7 +1,6 @@
 import {useReducer} from "react";
 
 // reducer 가 받은 action 타입을 정의한다
-
 type Action = 'DECREMENT' | 'INCREMENT' | 'DOUBLE' | 'RESET';
 
 const reducer = (currentCount: number, action: Action) => {
@@ -25,6 +24,13 @@ type CounterProps = {
 
 const CounterReducer = (props: CounterProps) => {
     const {initialValue} = props;
+    /*
+      reducer(현재 상태, action){
+          return 다음 상태
+      }
+
+      const [현재 상태, dispatch] = useReducer(reducer, reducer에 전달되는 초기 상태)
+     */
     const [count, dispatch] = useReducer(reducer, initialValue)
 
     return (
