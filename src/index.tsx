@@ -2,15 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Counter from "./components/CounterReducer";
+import {Parent} from "./components/UseImperativeHandle";
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
 root.render(
-    <React.StrictMode>
-        <Counter initialValue={1}/>
-    </React.StrictMode>
+    // <React.StrictMode>
+    <Parent/>
+    // </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

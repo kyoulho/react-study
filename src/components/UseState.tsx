@@ -4,7 +4,7 @@ type CounterProps = {
     initialValue: number
 }
 
-const CounterState = (props: CounterProps) => {
+const Counter = (props: CounterProps) => {
     const {initialValue} = props;
     // 카운트를 유지하는 첫 번째 상태를 useSate() 로 선언한다. 인수에는 초깃값을 지정한다.
     const [count, setCount] = useState(initialValue)
@@ -24,4 +24,4 @@ const CounterState = (props: CounterProps) => {
     );
 };
 
-export default CounterState
+export default Counter
